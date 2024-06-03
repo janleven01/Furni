@@ -76,7 +76,7 @@ const Cart = ({
                     min={1}
                     max="10"
                     onChange={(e) => handleQuantityChange(item, e.target.value)}
-                  />
+                  />{" "}
                   <button onClick={() => handleAddProduct(item)} className="">
                     +
                   </button>

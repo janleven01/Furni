@@ -1,9 +1,21 @@
+import { useState } from 'react';
 import { plusIcon } from '../assets/icons'
+import ModalAdd from "../component/ModalAdd";
 
 const ProductCard = ({
-    product,
-    handleAddProduct,
+  product,
+  handleAddProduct,
 }) => {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true)
+
+    setTimeout(() => {
+      setShowModal(false)
+    }, 1000)
+  }
 
   return (
     <div className="text-slate-800 pb-20 relative group">
@@ -19,15 +31,16 @@ const ProductCard = ({
       <h4 className="relative z-20 text-center font-extrabold font-fontF text-lg">
         ${product.price}
       </h4>
-      <div onClick={() => handleAddProduct(product)}>
+      <div onClick={() => {openModal(), handleAddProduct(product);}}>
         <img
           src={plusIcon}
-          alt="plus-icon" 
+          alt="plus-icon"
           className="absolute z-20 bg-black rounded-full p-1 w-10 h-10 bottom-0 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:-translate-y-[-20px] transition-all duration-500"
         />
       </div>
+      <ModalAdd showModal={showModal} />
     </div>
   );
-}
+};
 
 export default ProductCard

@@ -7,7 +7,7 @@ const ModalDelete = ({isModalOpen, onClose, onConfirm}) => {
       className={`fixed inset-0 flex justify-center items-center transition-colors z-50
         ${isModalOpen ? "visible bg-black/20" : "invisible"}
         `}
-    >
+  >
       <div className="flex justify-center bg-secondary border-t-[16px] border-primary min-w-[400px] min-h-[250px] max-sm:min-w-[350px] rounded-3xl relative">
         <Trash className="absolute w-20 fill-red-500 -top-10 bg-primary rounded-full p-4" />
         <div className="flex flex-col items-center">

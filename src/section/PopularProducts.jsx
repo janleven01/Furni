@@ -2,6 +2,7 @@ import Button from '../component/Button'
 import ProductCard from '../component/ProductCard'
 
 const PopularProducts = ({ handleAddProduct, productList }) => {
+
   return (
     <section className="max-container py-6">
       <div className="flex max-lg:flex-col pt-20">

@@ -103,7 +103,6 @@ const Main = () => {
     .reduce((price, item) => price + item.quantity * item.price, 0)
     .toFixed(2);
 
-
   const router = createBrowserRouter([
     {
       element: (
