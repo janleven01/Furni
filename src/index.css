@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Font_1';
+  src: url('./assets/fonts/font_1.ttf');
+  font-family: 'Font_2';
+  src: url('./assets/fonts/font_2.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* CSS to hide number input controls */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.required{
+  font-size: 14px;
+}
+
+.required::after {
+  content: ' *';
+  color: red;
+}
+
+select {
+  appearance: none;
+  scrollbar-width: none;
+    /*For Firefox*/
+    ;
+    -ms-overflow-style: none;
+    /*For Internet Explorer 10+*/
+    ;
+}
+
+select::-webkit-scrollbar {
+  /*For WebKit Browsers*/
+  width: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+@layer components{
+  .max-container{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+@layer utilities{
+  .padding {
+    @apply sm:px-16 px-8 sm:py-8 p-6
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-input {
+    @apply xl:px-64 lg:px-36 md:px-28
+  }
+}
