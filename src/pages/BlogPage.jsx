@@ -1,7 +1,7 @@
 import Hero from "../section/Hero";
 import BlogCard from "../component/BlogCard";
 import Testimonials from "../section/Testimonials";
-import { blogPage } from "../constants";
+import { blogs } from "../constants";
 
 const BlogPage = () => {
   return (
@@ -13,7 +13,7 @@ const BlogPage = () => {
       <section className="padding bg-secondary">
         <div className="max-container py-20">
           <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-x-7 gap-y-9">
-            {blogPage.map((blog, index) => (
+            {blogs.map((blog, index) => (
               <BlogCard key={index} {...blog} />
             ))}
           </div>

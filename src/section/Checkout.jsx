@@ -26,10 +26,10 @@ const Checkout = ({ totalPrice, cartItems, handlePlaceOrder }) => {
             <BillingDetails />
 
             {/* CHECKBOX */}
-            <div className="pt-10 text-[13px]">
+            <div className="flex flex-col gap-1 pt-10 text-[13px]">
               {/* CREATE ACCOUNT */}
               <div
-                className={`flex flex-col
+                className={`flex flex-col 
               `}
               >
                 <div className="flex gap-2">

@@ -17,7 +17,7 @@ const Message = (props) => {
         viewBox="0 0 24 24"
         fill="none"
         stroke="#3B5D50"
-        stroke-width="3"
+        strokeWidth="3"
         strokeLinecap="round"
         strokeLinejoin="round"
         className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 lucide lucide-check"

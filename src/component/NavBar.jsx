@@ -18,7 +18,9 @@ const NavBar = ({cartItems, showNav, lastScrollY}) => {
       ${
         showNav
           ? "translate-y-0 transition-all duration-400"
-          : `transition-all duration-300 ${isOpen ? '-translate-y-0': '-translate-y-[10vh] '}`
+          : `transition-all duration-300 ${
+              isOpen ? "-translate-y-0" : "-translate-y-[15vh] "
+            }`
       }
     `}
     >
@@ -61,8 +63,12 @@ const NavBar = ({cartItems, showNav, lastScrollY}) => {
       {/* MOBILE NAV LINKS AND ICONS */}
       <div
         onClick={() => setIsOpen(false)}
-        className={`max-container text-white/50 md:hidden font-semibold transition-all duration-500 ease-in-out
-        ${isOpen ? "max-h-96 pb-10" : "max-h-0 invisible opacity-0"}
+        className={`max-container text-white/50 md:hidden font-semibold transition-all ease-in-out 
+        ${
+          isOpen
+            ? "max-h-96 pb-10 duration-500"
+            : "max-h-0 invisible opacity-0 duration-300"
+        }
       `}
       >
         {navLinks.map((item, index) => (

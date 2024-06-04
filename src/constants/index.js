@@ -103,27 +103,6 @@ export const testimonials = [
     }
 ]
 
-export const blogs = [
-    {
-        imgURL: blogImage1,
-        label: "First Time Home Owner Ideas",
-        name: "Kristin Watson",
-        date: "Dec 19, 2021"
-    },
-    {
-        imgURL: blogImage2,
-        label: "How To Keep Your Furniture Clean",
-        name: "Robert Fox",
-        date: "Dec 15, 2021"
-    },
-    {
-        imgURL: blogImage3,
-        label: "Small Space Furniture Apartment Ideas",
-        name: "Kristin Watson",
-        date: "Dec 12, 2021"
-    },
-]
-
 export const footerColumns = [
   {
     column: 'first',
@@ -231,7 +210,7 @@ export const servicesPage = [
     },
 ]
 
-export const blogPage = [
+export const blogs = [
     {
         imgURL: blogImage1,
         label: "First Time Home Owner Ideas",
